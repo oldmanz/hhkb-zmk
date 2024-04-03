@@ -38,7 +38,7 @@
 &kp CAPS &trans &trans &trans &sys_reset &trans &trans &bootloader &kp PSCRN &kp SLCK &kp PAUSE_BREAK &kp UP &trans &kp BSPC
 &mo BT &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp C_EJECT &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp HOME &kp PG_UP &kp LEFT &kp RIGHT &trans
 &trans &trans &trans &trans &trans &trans &kp KP_PLUS &kp KP_MINUS &kp END &kp PG_DN &kp DOWN &trans &trans
-&to 1 &to 0               &trans                    &to 0 &to 1
+&trans &trans               &trans                    &trans &trans
             >;
         };
 
@@ -48,7 +48,7 @@
 &none &bt BT_CLR &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
-&none &none             &none                   &none &none
+&to 1 &to 0              &none                   &to 0 &to 1
             >;
         };
     };
