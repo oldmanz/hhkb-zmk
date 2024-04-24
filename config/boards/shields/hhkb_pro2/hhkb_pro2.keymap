@@ -46,7 +46,7 @@
         space_fn_layer {
             bindings = <
 &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp BSLH &kp GRAVE
-&kp TAB &kp KP_MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS &kp INS &kp PG_UP &kp UP &kp PD_DN &kp DEL &kp LBKT &kp RBKT &kp BSPC
+&kp TAB &kp KP_MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS &kp INS &kp PG_UP &kp UP &kp PG_DN &kp DEL &kp LBKT &kp RBKT &kp BSPC
 &kp LCTRL &kp KP_DIVIDE &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MULTIPLY &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp SQT &kp KP_ENTER
 &kp LSHFT &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp SPACE &kp KP_NUM &kp M &kp PAUSE_BREAK &kp SLCK &kp PSCRN &kp RSHFT &mo FN
 &kp LALT &kp LGUI                 &none                      &kp RGUI &kp RALT
