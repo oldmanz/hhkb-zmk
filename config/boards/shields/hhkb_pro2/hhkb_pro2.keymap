@@ -8,6 +8,8 @@
 #define FN 2
 #define SFN 3
 #define BT 4
+#define BT_CLR 5
+#define BT_DISC 6
 
 / {
     behaviors {
@@ -66,7 +68,27 @@
         bt_layer {
             bindings =<
 &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &none &none
-&none &bt BT_CLR &none &none &none &none &none &none &none &none &none &none &none &none
+&none &sl 5 &none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &sl 6 &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none &none
+&to 1 &to 0              &none                   &to 0 &to 1
+            >;
+        };
+
+        bt_clr_layer {
+            bindings =<
+&bt BT_CLR_ALL &bt BT_CLR 0 &bt BT_CLR 1 &bt BT_CLR 2 &bt BT_CLR 3 &bt BT_CLR 4 &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none &none
+&to 1 &to 0              &none                   &to 0 &to 1
+            >;
+        };
+
+        bt_disc_layer {
+            bindings =<
+&none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &none &none &none &none &none &none &none &none &none
+&none &none &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
 &to 1 &to 0              &none                   &to 0 &to 1
