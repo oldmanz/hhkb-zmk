@@ -68,8 +68,8 @@
         bt_layer {
             bindings =<
 &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &none &none
-&none &sl 5 &none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &sl 6 &none &none &none &none &none &none &none &none &none
+&none &sl BT_CLR &none &none &none &none &none &none &none &none &none &none &none &none
+&none &none &none &sl BT_DISC &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
 &to 1 &to 0              &none                   &to 0 &to 1
             >;
