@@ -4,10 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define ALT 1
-#define FN 2
-#define SFN 3
-#define BT 4
+#define FN 1
+#define BT 2
 
 / {
     behaviors {
@@ -33,16 +31,6 @@
             >;
         };
 
-        alt_layer {
-            bindings = <
-&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BSLH &kp GRAVE
-&kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSPC
-&kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER
-&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT &mo FN
-&kp LGUI &kp LALT                 &kp SPACE                   &kp RALT &kp RGUI
-            >;
-        };
-
         fn_layer {
             bindings = <
 &kp K_POWER &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp INS &kp DEL
@@ -53,23 +41,13 @@
             >;
         };
 
-        space_fn_layer {
-            bindings = <
-&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp BSLH &kp GRAVE
-&kp TAB &kp KP_MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS &kp INS &kp PG_UP &kp UP &kp PG_DN &kp DEL &kp LBKT &kp RBKT &kp BSPC
-&kp LCTRL &kp KP_DIVIDE &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MULTIPLY &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp SQT &kp KP_ENTER
-&kp LSHFT &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp SPACE &kp KP_NUM &kp M &kp PAUSE_BREAK &kp SLCK &kp PSCRN &kp RSHFT &mo FN
-&kp LALT &kp LGUI                 &none                      &kp RGUI &kp RALT
-            >;
-        };
-
         bt_layer {
             bindings =<
 &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &none &none
 &none &bt BT_CLR &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
 &none &none &none &none &none &none &none &none &none &none &none &none &none
-&to 1 &to 0              &none                   &to 0 &to 1
+&none &none               &none                   &none &none
             >;
         };
 
